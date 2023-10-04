@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="../static/css/registration.css">
+{% from "bootstrap5/form.html" import render_form, render_field %}
+
+{% include "header.html" %}
+
+
+<div class="registration_container">
+    <div class="registration_inner_container">
+        <div class="registration_heading">
+            <h1>Registration</h1>
+        </div>
+        <form action="{{url_for('register_page')}}" method="post">
+            {{render_form(form)}}
+        </form>
+    </div>
+</div>
+
+{% include "footer.html" %}

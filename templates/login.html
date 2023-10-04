@@ -1,0 +1,20 @@
+{% from "bootstrap5/form.html" import render_form, render_field %} {% block content %}
+{% include "header.html" %}
+<link rel="stylesheet" href="../static/css/login.css">
+
+<div class="login_page_container">
+    <div class="login_page_inner_container">
+            <h2 class="login_form_heading">Login In as</h1>
+            <div class="login_page_buttons">
+                <a href="{{url_for('admin_login')}}" class="login_links">
+                    <div class="admin_button">Admin</div>
+                </a>
+                
+                <a href="{{url_for('student_login')}}" class="login_links">
+                    <div class="student_button">Student</div>
+                </a>
+            </div>
+    </div>
+</div>
+
+{% include "footer.html" %} {% endblock %}

@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="../static/css/st_ad_login.css">
+{% from "bootstrap5/form.html" import render_form, render_field %} 
+{% include "header.html" %}
+
+<div class="login_continue_container">
+    <div class="login_continue_inner_container">
+        <form action="{{url_for('student_login')}}" method="post">
+            {{render_form(form)}}
+        </form>
+    </div>
+</div>
+
+{% include "footer.html" %} 
